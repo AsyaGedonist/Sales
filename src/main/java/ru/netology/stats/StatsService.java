@@ -43,7 +43,7 @@ public class StatsService {
                 lessAvgMonths ++;
             }
         }
-        return lessAvgMonths;
+        return lessAvgMonth;
     }
     public int getMoreAvgMonths(int[] sales) {
         StatsService service = new StatsService();
