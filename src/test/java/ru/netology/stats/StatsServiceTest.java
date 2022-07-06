@@ -17,6 +17,7 @@ public class StatsServiceTest {
         int actual = service.getSumSales(sales);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testGetAvgSales() {
         StatsService service = new StatsService();
