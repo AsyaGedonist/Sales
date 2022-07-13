@@ -10,8 +10,7 @@ public class StatsService {
     }
 
     public int getAvgSales(int[] sales) {
-        StatsService service = new StatsService();
-        int sumSales = service.getSumSales(sales);
+        int sumSales = getSumSales(sales);
         int avgSales = sumSales / sales.length;
         return avgSales;
     }
@@ -39,8 +38,7 @@ public class StatsService {
     }
 
     public int getLessAvgMonths(int[] sales) {
-        StatsService service = new StatsService();
-        int avgSales = service.getAvgSales(sales);
+        int avgSales = getAvgSales(sales);
         int lessAvgMonths = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < avgSales) {
@@ -51,8 +49,7 @@ public class StatsService {
     }
 
     public int getMoreAvgMonths(int[] sales) {
-        StatsService service = new StatsService();
-        int avgSales = service.getAvgSales(sales);
+        int avgSales = getAvgSales(sales);
         int moreAvgMonths = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] > avgSales) {
